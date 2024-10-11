@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Susto</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Archivo CSS externo -->
+</head>
+<body>
+
+    <div id="overlay"></div>
+    <img id="sustoImagen" src="img/Susto.jpg" alt="Susto" width="500">
+
+    <div id="contenido">
+        <h1>¡Bienvenido a la Mansión Embrujada!</h1>
+        <p>Elige una puerta para descubrir tu destino.</p>
+    
+        <!-- Contenedor de botones para alinearlos en fila -->
+        <div id="botones">
+            <button onclick="abrirPuerta(1)">Abrir Puerta Izquierda</button>
+            <button onclick="abrirPuerta(2)">Abrir Puerta Derecha</button>
+            <button onclick="abrirPuerta(3)">Abrir Puerta del Medio</button>
+            <button onclick="abrirPuerta(4)">Abrir Puerta Biblioteca</button>
+        </div>
+    </div>
+    
+    <!-- Contenedor del chat -->
+    <div id="chat"></div>
+
+    <audio id="sustoSonido">
+        <source src="mp3/grito.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    <script src="script.js"></script> <!-- Archivo JavaScript externo -->
+
+</body>
+</html>
